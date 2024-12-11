@@ -7,19 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Run check of pwd
-      run: pwd
-    - name: Run check of what's in pwd
-      run: ls
-    - name: Run a one-line script
-      run: sh ./.github/workflows/random.sh
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "your username"
-        git config --global user.email "your email"
-  
-        git add -A
-        git commit -m "commit message"
-        git push
-    
+      - uses: actions/checkout@v4
+      - run: |
+          date > generated.txt
+          # Note: the following account information will not work on GHES
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "generated"
+          git push
