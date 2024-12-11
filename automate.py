@@ -3,7 +3,7 @@ import pprint
 
 API_KEY = 'AIzaSyBRlNH70z3tuBVz5BKlAMNMOo2gPnYZ-84'
 spreadsheet_id = '1LKY0vyVjpCy0cozdtQnI56wOQFqSqlI18_5I-Wxe8GM'
-range_to_read = 'A1:D5'
+range_to_read = 'A2:D'
 url = f'https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}/values/{range_to_read}?key={API_KEY}'
 
 response = requests.get(url)
