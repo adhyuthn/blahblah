@@ -16,4 +16,4 @@ content_text = last_entry[2]
 print("RESPONSE:\n", response.json())
 
 with open("README.md", "a") as fd:
-    fd.write(f"### {heading_text}\nTimestamp: {time_text} \n\n{content_text}\n\n")
+    fd.write(f"### {heading_text}\nTimestamp: {time_text} \n\n{content_text}\n\n---\n\n")
