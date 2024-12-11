@@ -3,7 +3,7 @@
   https://github.com/orgs/community/discussions/25234
   https://stackoverflow.com/questions/67876177/triggering-github-action-using-a-post-request-github-rest-api
 
-> [!TIP]
+> [!LINKS]
 > Optional information to help a user be more successful.
 
 
