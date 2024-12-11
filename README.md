@@ -2,6 +2,7 @@
   - [Trigger Workflow events externally](https://docs.github.com/en/rest/actions?apiVersion=2022-11-28#create-a-workflow-dispatch-event)
   - [Using github-actions[bot]](https://github.com/orgs/community/discussions/26842)
   - [Sheets API](https://developers.google.com/sheets/api/quickstart/python)
+  - [External APIs in GApps](https://developers.google.com/apps-script/guides/services/external)
 
 ---
 
