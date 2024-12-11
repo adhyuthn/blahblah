@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      API_KEY_SHEETS: ${{ secrets.API_KEY_SHEETS }}
+      SPREADSHEET_ID_SHEETS: ${{ secrets.SPREADSHEET_ID_SHEETS }}
     steps:
       - uses: actions/checkout@v4
       - run: |
