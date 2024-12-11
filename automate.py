@@ -8,8 +8,9 @@ url = f'https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}/values/{r
 
 response = requests.get(url)
 last_entry = response.json()["values"][-1]
+time_text    = last_entry[0]
 heading_text = last_entry[1]
 content_text = last_entry[2]
 
 with open("README.md", "a") as fd:
-    fd.write(f"### {heading_text}\n{content_text}\n\n")
+    fd.write(f"### {heading_text}\n**Timestamp: {time_text}**\n{content_text}\n\n")
