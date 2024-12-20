@@ -2,8 +2,8 @@ import requests
 import pprint
 import os
 
-API_KEY = os.environ["API_KEY_SHEETS2"]
-SPREADSHEET_ID = os.environ["SPREADSHEET_ID_SHEETS2"]
+API_KEY = os.environ["API_KEY_SHEETS"]
+SPREADSHEET_ID = os.environ["SPREADSHEET_ID_SHEETS"]
 range_to_read = 'A2:C'
 url = f'https://sheets.googleapis.com/v4/spreadsheets/{SPREADSHEET_ID}/values/{range_to_read}?key={API_KEY}'
 
